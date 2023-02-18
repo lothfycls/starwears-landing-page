@@ -1,0 +1,111 @@
+import React,{useEffect,useRef,useState} from 'react'
+import "../style/home.css"
+import logo1 from '../assets/img/STARWEARS.png'
+import logo2 from '../assets/img/logo.png'
+import mobile from '../assets/img/mobile.png'
+import logo3 from '../assets/img/AppStore.png'
+import logo4 from '../assets/img/Playstore.png'
+import { BsFacebook } from "react-icons/bs";
+import { AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
+function AllRight() {
+
+  // time counter
+    const [days, setDays] = useState('00')
+    const [hours, setHours] = useState('00')
+    const [min, setMin] = useState('00')
+    const [sec, setSec] = useState('00')
+    let interval = useRef();
+    const startTimer = () => {
+
+        const countdownData = new Date('January 7, 2024 00:00:00').getTime()
+
+        interval = setInterval(()=> {
+            const now = new Date().getTime()
+            const distance = countdownData - now;
+            const timeday = Math.floor(distance / (1000 * 60 * 60 * 24))
+            const timehours=Math.floor((distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)))
+            const timemin=Math.floor((distance % (1000 * 60 * 60))/(1000 * 60))
+            const timesec=Math.floor((distance % (1000 * 60))/ 1000)
+            if (distance < 0){
+                //now stop timer
+                clearInterval(interval.current)
+            } else {
+                // update the timer
+                setDays(timeday)
+                setHours(timehours)
+                setMin(timemin)
+                setSec(timesec)
+            }
+
+        }, 1000)
+    }
+
+    useEffect(()=>{
+        startTimer();
+        return () => {
+            clearInterval(interval.current)
+        }
+    })
+
+  return (
+    <div className='gym__home' id='home'>
+    {/* grid */}
+    <div className='gym__section'>
+    {/* gym text side section */}
+    <div className='gym__home__text' data-aos="fade-right" data-aos-duration="800">
+    {/* top logo */}
+    <div className='gym__top__logo'>
+   <div className='im'><img src={logo1} className="" /></div><img src={logo2} />
+    </div>
+    {/* here is all home section text */}
+    <div className='gym__paragraph__text'>
+    <p><span>STARWEARS</span> will allow stars (such as athletes, actors, singers, influencers) and also designers to auction their luxury collections to their fans. The app will be soon available on both Apple Store & Play Store.</p>
+    <p>Based on auctions, the StarWears platform provides access to a catalog of products for a limited time. </p>
+    </div>
+   
+
+    {/* here count down will start */}
+    <div className='gym__counter'>
+    <h1>AVAILABLE SOON </h1>
+    {/* counter box */}
+    <div className='counter__box'>
+    {/* counter single box */}
+    <div className='count__single__box'><h2>{days}</h2><h5>days</h5></div>
+    <div className='count__single__box'><h2>:</h2></div>
+    {/* counter single box */}
+    <div className='count__single__box'><h2>{hours}</h2><h5>hours</h5></div>
+    <div className='count__single__box'><h2>:</h2></div>
+    {/* counter single box */}
+    <div className='count__single__box'><h2>{min}</h2><h5>minutes</h5></div>
+    <div className='count__single__box'><h2>:</h2></div>
+    {/* counter single box */}
+    <div className='count__single__box'><h2>{sec}</h2><h5>seconds</h5></div>
+    </div>
+    </div>
+
+    </div>
+{/* right picture section */}
+   <div className='gym__home__picture' data-aos="fade-left" data-aos-duration="800">
+{/* picture and social icons */}
+<div className='picture__and__social__icons'>
+<div><img src={mobile} className="vert-move"/>
+<div className='icons__under__picture'>
+  <img src={logo3}/><img src={logo4}/>
+</div>
+</div>
+<div className='social__icons'>
+<div><BsFacebook size={27} className="icon__color"/> </div>
+<div><AiFillInstagram size={27} className="icon__color"/></div>
+<div><AiFillTwitterCircle size={27} className="icon__color"/></div>
+</div>
+</div>
+
+   </div>
+
+    </div>
+       
+    </div>
+  )
+}
+
+export default AllRight

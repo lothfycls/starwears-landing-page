@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+.contact{
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: radial-gradient(36.09% 65.01% at 77.34% 56.44%, rgba(153, 153, 153, 0.57) 0%, rgba(170, 161, 161, 0) 80.99%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #000000;
+
+}
+.contact__inner{
+    max-width: 1050px;
+    margin: 0 auto;
+    align-items: center;
+}
+.contact__inner h1{
+    font-weight: 700;
+    padding-top: 40px;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+}
+.contact__inner span{
+    color: #CD0000;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: black;
+  }
+  
+  input[type=submit] {
+    background-color: #CD0000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #aa3131;
+  }
+
+  
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 700px;
+  }
+
+  
+@media screen and (max-width: 600px) {
+  .contact__inner h1{
+    
+    font-size: 26px;
+}
+  }
+
+  @media screen and (max-width: 480px) {
+    .contact__inner h1{
+      font-size: 24px;
+  }
+    }
+
+
+    .contact__button{
+      color: white;
+      padding: 14px 30px;
+      background-color: #CD0000;
+    }
+    .contact__button:hover{
+      color: white;
+      padding: 14px 30px;
+      background-color: #b02f2f;
+    }
