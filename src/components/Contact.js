@@ -13,7 +13,7 @@ function Contact() {
 
     
 <div className={show ? "contact__inner hideContactPage" : "contact__inner showMessageBar"} data-aos="fade-up" data-aos-duration="800">
-    <h1>Your Message is Submit. <span> Congratulations !</span> </h1> </div>
+    <h1>Your message has been sent ! <span> Congratulations !</span> </h1> </div>
 
 
     <div className={show ? "contact__inner showMessageBar" : "contact__inner hideContactPage"} data-aos="fade-up" data-aos-duration="800">
@@ -21,7 +21,7 @@ function Contact() {
     <div className="container" data-aos="fade-up" data-aos-duration="800">
         <form>
           <label htmlFor="fname"></label>
-          <input type="text" id="fname" name="firstname" placeholder="MICKAELJACKSON@GMAIL.COM........" />
+          <input type="text" id="fname" name="firstname" placeholder="mickaeljackson@gmail.com........" />
           <label htmlFor="lname"></label>
           <input type="text" id="lname" name="lastname" placeholder="Object : Collection “this is it” of Mickael Jackson" />
     

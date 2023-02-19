@@ -17,7 +17,7 @@ function AllRight() {
     let interval = useRef();
     const startTimer = () => {
 
-        const countdownData = new Date('January 7, 2024 00:00:00').getTime()
+        const countdownData = new Date('MAY 1, 2023 00:00:00').getTime()
 
         interval = setInterval(()=> {
             const now = new Date().getTime()
@@ -95,7 +95,7 @@ function AllRight() {
 </div>
 <div className='social__icons'>
 <div><BsFacebook size={27} className="icon__color"/> </div>
-<div><AiFillInstagram size={27} className="icon__color"/></div>
+<div><a href="https://www.instagram.com/starwearsofficial/"><AiFillInstagram size={27} className="icon__color"/></a></div>
 <div><AiFillTwitterCircle size={27} className="icon__color"/></div>
 </div>
 </div>

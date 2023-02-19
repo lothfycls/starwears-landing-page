@@ -26,50 +26,50 @@ function About() {
       
 
 
-        <div class="container vert-move">
+  <div className="container vert-move">
   <div className='aboutStarContainer'></div>
  
-  <div class="centered1">
+  <div className="centered1">
     <div><img src={star1}/></div>
   </div>
 
-  <div class="centered2">
+  <div className="centered2">
     <div><img src={star2}/></div>
   </div>
 
-  <div class="centered3">
+  <div className="centered3">
     <div><img src={star3}/></div>
   </div>
 
-  <div class="centered4">
+  <div className="centered4">
     <div><img src={star5}/></div>
   </div>
 
-  <div class="centered5">
+  <div className="centered5">
     <div><img src={star6}/></div>
   </div>
 
-  <div class="centered6">
+  <div className="centered6">
     <div><img src={star9}/></div>
   </div>
 
-  <div class="centered7">
+  <div className="centered7">
     <div><img src={star10}/></div>
   </div>
 
-  <div class="centered8">
+  <div className="centered8">
     <div><img src={star7}/></div>
   </div>
 
-  <div class="centered9">
+  <div className="centered9">
     <div><img src={star11}/></div>
   </div>
 
-  <div class="centered10">
+  <div className="centered10">
     <div><img src={star4}/></div>
   </div>
 
-  <div class="centered11">
+  <div className="centered11">
       <div><img src={star8}/></div> 
   </div>
 
@@ -79,20 +79,18 @@ function About() {
 
             <div className='text__box'>
             <div className='logo__and__heading'><div className=''><img src={red}/></div><div><h4>FAN ZONE</h4></div></div>
-            <p>Once the time has elapsed, the last person who has bid  will be the lucky one who will receive their product at home.  We will ensure the authenticity of each product and home delivery with a prestigious service</p>
+            <p>Once the time has elapsed, the last person who has bid will be the lucky one who will receive their product at home. We will ensure the authenticity of each product and home delivery with a prestigious service</p>
             </div>
 
             <div className='text__box'>
-            <div className='logo__and__heading'><div className=''><img src={red}/></div><div><h4>FAN ZONE</h4></div></div>
-            <p>Once the time has elapsed, the last person who has bid  will be the lucky one who will receive their product at home.  We will ensure the authenticity of each product and home delivery with a prestigious service</p>
+            <div className='logo__and__heading'><div className=''><img src={red}/></div><div><h4>STAR ZONE</h4></div></div>
+            <p>Our catalog will be diversified between singers,influencers, athletes, actors who will be able to recover cash. </p>
             </div>
 
             <div className='text__box'>
-            <div className='logo__and__heading'><div className=''><img src={red}/></div><div><h4>FAN ZONE</h4></div></div>
-            <p>Once the time has elapsed, the last person who has bid  will be the lucky one who will receive their product at home.  We will ensure the authenticity of each product and home delivery with a prestigious service</p>
-            </div>
-
-    
+            <div className='logo__and__heading'><div className=''><img src={red}/></div><div><h4>FOUNDATION</h4></div></div>
+            <p>In addition to this, we would like to donate a percentage of each sale to a foundation chosen by the star.</p>
+            </div>    
         </div>
     </div>
     </div>
