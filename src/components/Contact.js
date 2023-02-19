@@ -17,8 +17,10 @@ function Contact() {
 
     emailjs.sendForm(process.env.YOUR_SERVICE_ID, process.env.YOUR_TEMPLATE_ID, form.current, process.env.YOUR_PUBLIC_KEY)
       .then((result) => {
+        console.log(process.env)
           console.log(result.text);
       }, (error) => {
+        console.log(process.env)
           console.log(error.text);
       });
   };
