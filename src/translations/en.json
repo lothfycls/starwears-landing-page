@@ -1,0 +1,32 @@
+{
+  "navigation": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us"
+  },
+  "home": {
+    "availableSoon": "AVAILABLE SOON",
+    "days": "days",
+    "hours": "hours",
+    "minutes": "minutes",
+    "secondes": "secondes",
+    "intro1": "will allow stars (such as athletes, actors, singers, influencers) and also designers to auction their luxury collections to their fans. The app will be soon available on both Apple Store & Play Store.",
+    "intro2": "Based on auctions, the StarWears platform provides access to a catalog of products for a limited time."
+  },
+  "aboutUs": {
+    "fanZone": "FAN ZONE",
+    "starZone": "STAR ZONE",
+    "foundation": "CHARITY",
+    "fanZoneText": "Once the time has elapsed, the last person who has bid will be the lucky one who will receive their product at home. We will ensure the authenticity of each product and home delivery with a prestigious service.",
+    "starZoneText": "Our catalog will be diversified between singers,influencers, athletes, actors who will be able to recover cash.",
+    "foundationText": "In addition to this, we would like to donate a percentage of each sale to a foundation chosen by the star."
+  },
+  "contactUs": {
+    "letUsEmail": "TO BE PART OF OUR CATALOG , LET US YOUR",
+    "object": "Object : Collection “this is it” of Mickael Jackson",
+    "body": "Hello , i want to sell my clothes....",
+    "send": "Send",
+    "messageSent": "Your message has been sent !",
+    "congratulations": "Congratulations !"
+  }
+}

@@ -7,7 +7,10 @@ import logo3 from '../assets/img/AppStore.png'
 import logo4 from '../assets/img/Playstore.png'
 import { BsFacebook } from "react-icons/bs";
 import { AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
+import {useTranslation} from "react-i18next";
+
 function AllRight() {
+  const {t} = useTranslation('common');
 
   // time counter
     const [days, setDays] = useState('00')
@@ -59,27 +62,27 @@ function AllRight() {
     </div>
     {/* here is all home section text */}
     <div className='gym__paragraph__text'>
-    <p><span>STARWEARS</span> will allow stars (such as athletes, actors, singers, influencers) and also designers to auction their luxury collections to their fans. The app will be soon available on both Apple Store & Play Store.</p>
-    <p>Based on auctions, the StarWears platform provides access to a catalog of products for a limited time. </p>
+    <p><span>STARWEARS</span> {t('home.intro1')}</p>
+    <p>{t('home.intro2')}</p>
     </div>
    
 
     {/* here count down will start */}
     <div className='gym__counter'>
-    <h1>AVAILABLE SOON </h1>
+    <h1>{t('home.availableSoon')} </h1>
     {/* counter box */}
     <div className='counter__box'>
     {/* counter single box */}
-    <div className='count__single__box'><h2>{days}</h2><h5>days</h5></div>
+    <div className='count__single__box'><h2>{days}</h2><h5>{t('home.days')}</h5></div>
     <div className='count__single__box'><h2>:</h2></div>
     {/* counter single box */}
-    <div className='count__single__box'><h2>{hours}</h2><h5>hours</h5></div>
+    <div className='count__single__box'><h2>{hours}</h2><h5>{t('home.hours')}</h5></div>
     <div className='count__single__box'><h2>:</h2></div>
     {/* counter single box */}
-    <div className='count__single__box'><h2>{min}</h2><h5>minutes</h5></div>
+    <div className='count__single__box'><h2>{min}</h2><h5>{t('home.minutes')}</h5></div>
     <div className='count__single__box'><h2>:</h2></div>
     {/* counter single box */}
-    <div className='count__single__box'><h2>{sec}</h2><h5>seconds</h5></div>
+    <div className='count__single__box'><h2>{sec}</h2><h5>{t('home.secondes')}</h5></div>
     </div>
     </div>
 

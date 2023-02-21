@@ -1,7 +1,7 @@
 import React from 'react'
+import {useTranslation} from "react-i18next";
+
 import "../style/about.css"
-import { CgGym } from "react-icons/cg";
-import mobile from '../assets/img/pngimg.com - bodybuilding_PNG26.png'
 import star1 from '../assets/img/2.png'
 import star2 from '../assets/img/1.png'
 import star3 from '../assets/img/3.png'
@@ -15,6 +15,8 @@ import star10 from '../assets/img/10.png'
 import star11 from '../assets/img/11.png'
 import red from '../assets/img/red.jpg'
 function About() {
+  const {t} = useTranslation('common');
+
   return (
     <div className='about' id='about'>
 
@@ -78,18 +80,18 @@ function About() {
         <div className='about__text'>
 
             <div className='text__box'>
-            <div className='logo__and__heading'><div className=''><img src={red}/></div><div><h4>FAN ZONE</h4></div></div>
-            <p>Once the time has elapsed, the last person who has bid will be the lucky one who will receive their product at home. We will ensure the authenticity of each product and home delivery with a prestigious service</p>
+            <div className='logo__and__heading'><div className=''><img src={red}/></div><div><h4>{t('aboutUs.fanZone')}</h4></div></div>
+            <p>{t('aboutUs.fanZoneText')}</p>
             </div>
 
             <div className='text__box'>
-            <div className='logo__and__heading'><div className=''><img src={red}/></div><div><h4>STAR ZONE</h4></div></div>
-            <p>Our catalog will be diversified between singers,influencers, athletes, actors who will be able to recover cash. </p>
+            <div className='logo__and__heading'><div className=''><img src={red}/></div><div><h4>{t('aboutUs.starZone')}</h4></div></div>
+            <p>{t('aboutUs.starZoneText')}</p>
             </div>
 
             <div className='text__box'>
-            <div className='logo__and__heading'><div className=''><img src={red}/></div><div><h4>FOUNDATION</h4></div></div>
-            <p>In addition to this, we would like to donate a percentage of each sale to a foundation chosen by the star.</p>
+            <div className='logo__and__heading'><div className=''><img src={red}/></div><div><h4>{t('aboutUs.foundation')}</h4></div></div>
+            <p>{t('aboutUs.foundationText')}</p>
             </div>    
         </div>
     </div>

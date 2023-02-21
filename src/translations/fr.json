@@ -1,0 +1,32 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "aboutUs": "A propos",
+    "contactUs": "Contact"
+  },
+  "home": {
+    "availableSoon": "BIENTOT DISPONIBLE",
+    "days": "jours",
+    "hours": "heures",
+    "minutes": "minutes",
+    "secondes": "secondes",
+    "intro1": "permettra aux stars (comme les athlètes, les acteurs, les chanteurs, les influenceurs) mais aussi aux créateurs de vendre aux enchères leurs collections de luxe à leurs fans. L'application sera bientôt disponible sur Apple Store et Play Store.",
+    "intro2": "Basée sur des ventes aux enchères, la plateforme StarWears donne accès à un catalogue de produits pendant une durée limitée."
+  },
+  "aboutUs": {
+    "fanZone": "FAN ZONE",
+    "starZone": "STAR ZONE",
+    "foundation": "CHARITÉ",
+    "fanZoneText": "Une fois le temps écoulé, la dernière personne qui aura enchéri sera l'heureuse élue qui recevra son produit à domicile. Nous assurerons l'authenticité de chaque produit et livraison à domicile avec un service prestigieux.",
+    "starZoneText": "Notre catalogue sera diversifié entre chanteurs, influenceurs, sportifs, acteurs qui pourront récupérer du cash.",
+    "foundationText": "De plus , nous aimerions reverser un pourcentage de chaque vente à une fondation choisie par la star."
+  },
+  "contactUs": {
+    "letUsEmail": "POUR FAIRE PARTIE DE NOTRE CATALOGUE, LAISSEZ-NOUS VOTRE",
+    "object": "Objet : Collection “this is it” de Mickael Jackson",
+    "body": "Bonjour, je souhaite vendre ma collection de vêtements....",
+    "send": "Envoyer",
+    "messageSent": "Votre message a été envoyé !",
+    "congratulations": "Felicitations !"
+  }
+}
