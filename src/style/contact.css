@@ -65,20 +65,24 @@ input[type=text], select, textarea {
 }
   }
 
-  @media screen and (max-width: 480px) {
-    .contact__inner h1{
-      font-size: 24px;
+@media screen and (max-width: 480px) {
+  .contact__inner h1{
+    font-size: 24px;
+}
   }
-    }
 
 
-    .contact__button{
-      color: white;
-      padding: 14px 30px;
-      background-color: #CD0000;
-    }
-    .contact__button:hover{
-      color: white;
-      padding: 14px 30px;
-      background-color: #b02f2f;
-    }
+.contact__button{
+  color: white;
+  padding: 14px 30px;
+  background-color: #CD0000;
+}
+.contact__button:hover{
+  color: white;
+  padding: 14px 30px;
+  background-color: #b02f2f;
+}
+
+.formError{
+  color:#b02f2f;
+}
