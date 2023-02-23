@@ -86,3 +86,7 @@ input[type=text], select, textarea {
 .formError{
   color:#b02f2f;
 }
+
+.copyrights{
+  text-align: center;
+}

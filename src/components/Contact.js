@@ -108,6 +108,7 @@ function Contact() {
             />
           </form>
         </div>
+        <div className="copyrights">{t("contactUs.copyrights")}</div>
       </div>
     </div>
   );
