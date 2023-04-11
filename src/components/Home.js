@@ -20,7 +20,7 @@ function AllRight() {
     let interval = useRef();
     const startTimer = () => {
 
-        const countdownData = new Date('MAY 1, 2023 00:00:00').getTime()
+        const countdownData = new Date('JULY 1, 2023 00:00:00').getTime()
 
         interval = setInterval(()=> {
             const now = new Date().getTime()
